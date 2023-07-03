@@ -9,24 +9,21 @@
             <i class="bi bi-list"></i>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+            <ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
               <li class="nav-item">
-                <router-link class="text-white" to="/">Home</router-link>_
+                <router-link class="text-white text-decoration-none" to="/">Home</router-link>
               </li>
               <li class="nav-item">
-                <router-link class="text-white" to="about">About</router-link>_
+                <router-link class="text-white text-decoration-none" to="resume">Resume</router-link>
               </li>
               <li class="nav-item">
-                <router-link class="text-white" to="resume">Resume</router-link>_
+                <router-link class="text-white text-decoration-none" to="projects">Projects</router-link>
               </li>
               <li class="nav-item">
-                <router-link class="text-white" to="projects">Projects</router-link>_
+                <router-link class="text-white text-decoration-none" to="testimonials">Testimonials</router-link>
               </li>
               <li class="nav-item">
-                <router-link class="text-white" to="testimonials">Testimonials</router-link>_
-              </li>
-              <li class="nav-item">
-                <router-link class="text-white" to="contact">Contact</router-link>
+                <router-link class="text-white text-decoration-none" to="contact">Contact</router-link>
               </li>
             </ul>
           </div>
@@ -41,5 +38,8 @@
 </script>
 
 <style scoped>
-
+  a{
+    padding-inline: 0rem;
+    margin-right: 4rem;
+  }
 </style>

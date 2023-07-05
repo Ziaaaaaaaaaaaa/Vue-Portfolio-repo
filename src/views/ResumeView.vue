@@ -1,8 +1,8 @@
 <template>
     <div>
         <div class="container">
-            <h1 class="resume-heading animate__animated animate__fadeInDown">Resu<span>me</span></h1>
-            <h2 class="education-heading animate__animated animate__fadeInUp">Educ<span>ation</span></h2>
+            <h1 class="resume-heading" v-motion-slide-top v-motion-fade>Resu<span>me</span></h1>
+            <h2 class="education-heading" v-motion-slide-bottom v-motion-fade>Educ<span>ation</span></h2>
             <div class="row gap-">
                 <div class="col" v-for="item in educationData" :key="item.id">
                     <div class="card h-100 w-100" style="width: 18rem;">
@@ -16,7 +16,7 @@
             </div>
         </div>
     </div>
-    <h2 class="skills-heading animate__animated animate__fadeInUp">Ski<span>lls</span></h2>
+    <h2 class="skills-heading " v-motion-slide-bottom-visible v-motion-fade-visible>Ski<span>lls</span></h2>
     <div>
         <div class="container">
             <div class="row gap-3">

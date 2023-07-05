@@ -7,17 +7,39 @@
   <a href="#about"><button class="btnA"><i class="bi bi-arrow-down-circle icon " style="font-size: 3rem;"></i></button></a>
   <div class="hero-image"></div>
   <section>
-  <div class="about">
-    <h1 class="about-title animate__animated animate__fadeInDown animate__delay-1s	1s" id="about">About <span>meh...</span></h1>
+    <div class="about">
+    <h1 class="about-title" id="about" v-motion
+    :initial="{
+      opacity: 0,
+      y: 100
+    }"
+    :visible="{
+      opacity: 1,
+      y: 0,
+      transition: {
+        delay: 500
+      }
+    }">About <span>meh...</span></h1>
 
     </div>
-    <div class="container text-center">
+    <div class="container text-center"  v-motion
+    :initial="{
+      opacity: 0,
+      y: 100
+    }"
+    :visible="{
+      opacity: 1,
+      y: 0,
+      transition: {
+        delay: 500
+      }
+    }">
       <div class="row w-100">
         <div class="col">
           <img class="" style="width: 20rem; margin-top: 3rem; " src="https://i.postimg.cc/027Wjhnn/zia.jpg" alt="">
         </div>
         <div class="col">
-          <p> Hey! I'm like a web developer wannabe, and I'm, like, super determined and stuff. When I found out about web development, I was like, "Wow, that's my thing!" I'm always up for a challenge, you know? Learning new coding stuff, trying out fancy frameworks, and keeping up with what's hot in the industry is my jam.
+          <p v-motion-fade> Hey! I'm like a web developer wannabe, and I'm, like, super determined and stuff. When I found out about web development, I was like, "Wow, that's my thing!" I'm always up for a challenge, you know? Learning new coding stuff, trying out fancy frameworks, and keeping up with what's hot in the industry is my jam.
 
             No matter what comes my way, I'm not gonna back down. I'm like a bulldozer, smashing through problems and learning from my mistakes. I pour my heart and soul into my work, making sure that the websites I build are not just okay but totally mind-blowing.
             
@@ -62,7 +84,11 @@
   }
 
   .about{
-    padding-top: 20rem;
+    padding-top: 10rem;
+  }
+
+  .text-center{
+    : 10rem;
   }
 
   p{

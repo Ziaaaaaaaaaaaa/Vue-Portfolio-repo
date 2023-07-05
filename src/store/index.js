@@ -5,7 +5,8 @@ export default createStore({
   state: {
     projectsData: [],
     educationData: [],
-    skillsData: []
+    skillsData: [],
+    testimonialsData: [],
   },
   getters: {
   },
@@ -18,6 +19,9 @@ export default createStore({
     },
     setStateSkills(state, skills){
       state.skillsData = skills
+    },
+    setStateTestimonials(state, testimonials){
+      state.testimonialsData = testimonials
     }
   },
   actions: {
@@ -32,6 +36,10 @@ export default createStore({
     async fetchDataSkills({commit}){
       const fetchDataSkills = await axios.get('https://ziaaaaaaaaaaaa.github.io/Json-Portfolio-Server/portfolio.json')
       commit('setStateSkills', fetchDataSkills.data.skills)
+    },
+    async fetchDataTestimonials({commit}){
+      const fetchDataTestimonials = await axios.get('https://ziaaaaaaaaaaaa.github.io/Json-Portfolio-Server/portfolio.json')
+      commit('setStateTestimonials', fetchDataTestimonials.data.testimonials)
     }
   },
   modules: {

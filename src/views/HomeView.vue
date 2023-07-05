@@ -36,7 +36,7 @@
     }">
       <div class="row w-100">
         <div class="col">
-          <img class="" style="width: 20rem; margin-top: 3rem; " src="https://i.postimg.cc/027Wjhnn/zia.jpg" alt="">
+          <img class="image" style="width: 20rem; margin-top: 2rem; " src="https://i.postimg.cc/027Wjhnn/zia.jpg" alt="">
         </div>
         <div class="col">
           <p v-motion-fade>Hi ! I'm a aspiring web developer, I'm super determined to be someone and make something of my life . When i found out and looked into web development i found interest in it since it seems like the type of career field i'd be comfortable in and its my prefered type of working style. I'm always up for a challenge and i needed to Learn a new skill which is coding.No matter what comes my way, I'm not going to back down. smashing through problems and learning from my mistakes. I pour my heart and soul into my work, making sure that the websites I build are not just okay but totally mind-blowing. Being a web developer is my passion. Even if things get tough, I won't give up. I'll find a way to make things work, no matter what. i have always been an introvert and kept to myself but since i started this coding course ive become a bit more social and im learning to work with others.</p>
@@ -114,6 +114,5 @@
   .icon{
     color: rgba(255, 255, 255, 0.786);
   }
-
 
 </style>

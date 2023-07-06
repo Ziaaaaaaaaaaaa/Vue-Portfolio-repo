@@ -1,8 +1,9 @@
 <template>
-    <div class="container mt-5">
-        <h1>Contact <span>Meh...</span></h1>
-        <form  action="https://formspree.io/f/moqzbakn"
-        method="POST">
+    <h1 class="animate__animated animate__fadeInDown mt-5">Contact <span>Meh...</span></h1>
+    <div class="container mt-3 d-flex justify-content-center" >
+        <div class="contform">
+            <form class="animate__animated animate__fadeInDownBig animate__delay-1s	1s" action="https://formspree.io/f/moqzbakn"
+        method="POST" >
             <div class="mb-3">
                 <label for="exampleFormControlInput1" class="form-label mt-3">Name</label>
                 <input type="text" class="form-control  bg-transparent" id="exampleFormControlInput1" name="name" placeholder="Enter your full name" required autocomplete="off">
@@ -19,6 +20,7 @@
                 <button class="btn mb-5" type="submit">Send</button>
               </div>
         </form>
+        </div>
     </div>
 </template>
 
@@ -29,6 +31,10 @@
 </script>
 
 <style scoped>
+
+.contform {
+    width: 50%;
+}
 
 span {
   
@@ -83,6 +89,10 @@ input[type="email"]
 }
 
 .container{
-    width: 40rem;
+    width:rem;
+}
+
+@media (max-width < 300px){
+
 }
 </style>

@@ -11,19 +11,19 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav m-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <router-link class="text-white text-decoration-none" to="/">Home</router-link>
+                <router-link class="text text-decoration-none" to="/">Home</router-link>
               </li>
               <li class="nav-item">
-                <router-link class="text-white text-decoration-none" to="resume">Resume</router-link>
+                <router-link class="text text-decoration-none" to="resume">Resume</router-link>
               </li>
               <li class="nav-item">
-                <router-link class="text-white text-decoration-none" to="projects">Projects</router-link>
+                <router-link class="text text-decoration-none" to="projects">Projects</router-link>
               </li>
               <li class="nav-item">
-                <router-link class="text-white text-decoration-none" to="testimonials">Testimonials</router-link>
+                <router-link class="text text-decoration-none" to="testimonials">Testimonials</router-link>
               </li>
               <li class="nav-item">
-                <router-link class="text-white text-decoration-none" to="contact">Contact</router-link>
+                <router-link class="text text-decoration-none" to="contact">Contact</router-link>
               </li>
             </ul>
           </div>
@@ -40,5 +40,21 @@
 <style scoped>
 .nav-item{
   margin-inline: 1rem;
+  font-size: 17.7px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+
+.text{
+  color: white;
+}
+
+.nav-item:hover{
+  text-decoration: underline;
+  text-decoration-color: rgb(0, 212, 0);
+}
+.text:hover{
+  color: rgb(1, 227, 1);
 }
 </style>

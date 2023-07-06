@@ -5,11 +5,12 @@
         <div class="container mb-5">
             <div class="row">
                 <div class="col-12 col-md-6 col-lg-4 mb-5 mt-5" v-for="item in testimonialsData" :key="item.id"  v-motion-pop>
-                    <div class="card h-100 w-100" style="width: 18rem;">
-                        <div class="card-body">
+                    <div class="card h-100 w-100 bg-transparent" style="width: 18rem;">
+                        <div class="card-body ">
                             <img :src="item.img" class="card-img-top" alt="...">
-                            <p class="card-text">{{ item.name }}</p>
-                            <p class="card-text">{{ item.text }}</p>
+                            <h3 class="card-text text-white mt-3">{{ item.name }}</h3>
+                            <hr class="m-auto w-75a mb-3 text-white">
+                            <p class="card-text text-white">{{ item.text }}</p>
                         </div>
                       </div>
                 </div>

@@ -9,7 +9,7 @@
             <i class="bi bi-list"></i>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
+            <ul class="navbar-nav m-auto mb-2 mb-lg-0">
               <li class="nav-item">
                 <router-link class="text-white text-decoration-none" to="/">Home</router-link>
               </li>
@@ -38,8 +38,7 @@
 </script>
 
 <style scoped>
-  a{
-    padding-inline: 0rem;
-    margin-right: 4rem;
-  }
+.nav-item{
+  margin-inline: 1rem;
+}
 </style>

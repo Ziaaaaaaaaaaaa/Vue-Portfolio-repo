@@ -6,10 +6,10 @@
           <h2 class="education-heading mt-5" v-motion-slide-bottom v-motion-fade>Educ<span>ation</span></h2>
             <div class="row gap-">
                 <div class="col" v-for="item in educationData" :key="item.id"  v-motion-pop>
-                    <div class="card h-100 w-100" style="width: 18rem;">
-                        <div class="card-body">
-                            <p class="card-text">{{ item.place }}</p>
-                            <p class="card-text">{{ item.year }}</p>
+                    <div class="card h-100 bg-transparent">
+                        <div class="card-body bg-transparent">
+                            <h2 class="card-text text-white">{{ item.place }}</h2>
+                            <h5 class="card-text text-white">{{ item.year }}</h5>
                             <img :src="item.img" class="card-img-top" alt="...">
                         </div>
                       </div>
@@ -23,11 +23,11 @@
           <h2 class="skills-heading " v-motion-slide-bottom-visible v-motion-fade-visible>Ski<span>lls</span></h2>
             <div class="row gap-3">
                 <div class="col" v-for="item in skillsData" :key="item.id"  v-motion-pop-visible>
-                    <div class="card h-100" style="width: 18rem;">
-                        <div class="card-body">
+                    <div class="card h-100 bg-transparent" style="width: 18rem;">
+                        <div class="card-body bg-transparent">
                             <img :src="item.img" class="card-img-top" alt="...">
-                            <p class="card-text">{{ item.title }}</p>
-                            <p class="card-text">{{ item.levels }}</p>
+                            <p class="card-text text-white">{{ item.title }}</p>
+                            <p class="card-text text-white">{{ item.levels }}</p>
                         </div>
                       </div>
                 </div>
@@ -91,7 +91,7 @@ span {
     background: #fff;
     box-shadow: 0 6px 10px rgba(60, 255, 0, 0.452), 0 0 6px rgb(85, 255, 0);
       transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
-  padding: 14px 80px 18px 36px;
+  padding: 14px px 18px 36px;
   cursor: pointer;
 }
 

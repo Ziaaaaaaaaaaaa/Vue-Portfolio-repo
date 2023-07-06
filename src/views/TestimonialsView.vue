@@ -35,6 +35,11 @@
 
 <style scoped>
 
+img{
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
 span {
   
     color: #ffffff;

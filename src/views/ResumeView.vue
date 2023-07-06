@@ -21,9 +21,9 @@
       <div class="container mt-5 mb-5">
         <hr class="m-auto w-75">
           <h2 class="skills-heading " v-motion-slide-bottom-visible v-motion-fade-visible>Ski<span>lls</span></h2>
-            <div class="row gap-3">
-                <div class="col" v-for="item in skillsData" :key="item.id"  v-motion-pop-visible>
-                    <div class="card h-100 bg-transparent" style="width: 18rem;">
+            <div class="row gap-4">
+                <div class="col-12 col-md-6 m-auto"  style="width: 18rem;" v-for="item in skillsData" :key="item.id"  v-motion-pop-visible>
+                    <div class="card h-100 w-100 bg-transparent">
                         <div class="card-body bg-transparent">
                             <img :src="item.img" class="card-img-top" alt="...">
                             <p class="card-text text-white">{{ item.title }}</p>

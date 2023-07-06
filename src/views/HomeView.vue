@@ -4,7 +4,7 @@
     <h2 class="animate__animated animate__fadeIn animate__delay-2s	2s">My Name is Zia <span>Khan</span></h2>
     <h3 class="animate__animated animate__fadeInUp animate__delay-3s	3s">Aspiring <span> Web Developer </span></h3>
   </div>
-  <a href="#about"><button class="btnA"><i class="bi bi-arrow-down-circle icon " style="font-size: 3rem;"></i></button></a>
+  <a href="#about"><button class="btnA animate__animated animate__fadeInDown  animate__delay-3s	3s"><i class="bi bi-arrow-down-circle icon " style="font-size: 3rem;"></i></button></a>
   <div class="hero-image"></div>
   <section>
     <div class="about">
@@ -108,7 +108,7 @@
     border-radius: 2rem;
     border: none;
     background-color: rgba(204, 204, 204, 0);
-    margin-top: 7rem;
+    margin-top: 4rem;
   }
 
   .icon{

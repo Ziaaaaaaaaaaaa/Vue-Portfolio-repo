@@ -26,8 +26,8 @@
               {{ item.title }}
             </h4>
             <p class="description-text text-white">{{ item.description }}</p>
-            <a :href="item.github" target="_blank" class="btn btn-danger">GitHub</a>
-            <a :href="item.netlify" target="_blank" class="btn btn-danger">Netlify</a>
+            <a :href="item.github" target="_blank" class="btn">GitHub</a>
+            <a :href="item.netlify" target="_blank" class="btn">Netlify</a>
           </div>
         </div>
       </div>
@@ -52,6 +52,8 @@
 
 .btn {
   margin: 1rem;
+  box-shadow: 0 6px 10px rgba(60, 255, 0, 0.452), 0 0 6px rgb(85, 255, 0);
+  background-color: #48ff00c5;
 }
 
 span {

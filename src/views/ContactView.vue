@@ -6,7 +6,10 @@
         method="POST" >
             <div class="mb-3">
                 <label for="exampleFormControlInput1" class="form-label mt-3">Name</label>
-                <input type="text" class="form-control  bg-transparent" id="exampleFormControlInput1" name="name" placeholder="Enter your full name" required autocomplete="off">
+                <input type="text" class="form-control  bg-transparent" id="exampleFormControlInput1" name="name" placeholder="Enter your full name" autocomplete="off" required
+                oninvalid="this.setCustomValidity('Please Enter Your Name')"
+                oninput="this.setCustomValidity('')" minlength="3"
+                maxlength="20">
                 <label for="exampleFormControlInput1" class="form-label mt-3">Email</label>
                 <input type="email" class="form-control  bg-transparent" id="exampleFormControlInput1" name="email" placeholder="name@example.com" autocomplete="off">
                 <label for="exampleFormControlInput1" class="form-label mt-3">Subject</label>
@@ -32,6 +35,7 @@
 </script>
 
 <style scoped>
+
 
 .contform {
     width: 50%;
